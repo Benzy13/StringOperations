@@ -23,6 +23,18 @@ namespace StringOperations
             var names = fullName.Split(' ');
             Console.WriteLine("First Name: " + names[0]);
             Console.WriteLine("Last Name: " + names[1]);
+
+            var newName = fullName.Replace("James", "Jean");
+            Console.WriteLine(newName);
+
+            if (string.IsNullOrWhiteSpace(""))
+                Console.WriteLine("Invalid");
+
+            var str = "25";
+            var age = Convert.ToByte(str);
+
+            float price = 29.29f;
+            Console.WriteLine(price.ToString("C1")); 
         }
     }
 }
